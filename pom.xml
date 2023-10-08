@@ -24,7 +24,7 @@
         <plugins.enforcer.version>3.4.1</plugins.enforcer.version>
         <plugins.release.version>3.0.0-M6</plugins.release.version>
         <libs.spotbugs.version>4.7.3</libs.spotbugs.version>
-        <plugins.spotbugs.version>4.7.3.2</plugins.spotbugs.version>
+        <plugins.spotbugs.version>4.7.3.6</plugins.spotbugs.version>
 
         <plugins.checkstyle.version>3.2.1</plugins.checkstyle.version>
         <plugins.checkstyle.puppycrawl.version>10.8.0</plugins.checkstyle.puppycrawl.version>
