@@ -186,7 +186,6 @@
                     <failsOnError>true</failsOnError>
                     <linkXRef>false</linkXRef>
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
-<!--                    <suppressionsLocation>rules/checkstyle-suppressions.xml</suppressionsLocation>-->
                     <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
                     <sourceDirectories>
                         <directory>${project.build.sourceDirectory}</directory>
