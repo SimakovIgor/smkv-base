@@ -31,7 +31,7 @@
         <plugins.checkstyle.thomasjensen.version>7.0.1</plugins.checkstyle.thomasjensen.version>
         <plugins.jacoco.version>0.8.11</plugins.jacoco.version>
         <plugins.pmd.version>3.21.0</plugins.pmd.version>
-        <plugins.surefire.version>3.1.2</plugins.surefire.version>
+        <plugins.surefire.version>3.2.1</plugins.surefire.version>
         <plugins.git-commit-id.version>4.9.10</plugins.git-commit-id.version>
     </properties>
 
