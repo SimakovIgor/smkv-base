@@ -174,7 +174,7 @@
                                     <version>[3.8,)</version>
                                 </requireMavenVersion>
                                 <requireJavaVersion>
-                                    <version>[19,)</version>
+                                    <version>[17,)</version>
                                 </requireJavaVersion>
                             </rules>
                         </configuration>
@@ -231,6 +231,7 @@
                     <linkXRef>false</linkXRef>
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
                     <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
+                    <excludes>**/ContractVerifierTest.java</excludes>
                     <sourceDirectories>
                         <directory>${project.build.sourceDirectory}</directory>
                         <directory>${project.build.testSourceDirectory}</directory>
@@ -354,6 +355,7 @@
                     </rulesets>
                     <excludeRoots>
                         <excludeRoot>target/generated-sources</excludeRoot>
+                        <excludeRoot>target/generated-test-sources</excludeRoot>
                     </excludeRoots>
                 </configuration>
                 <executions>
