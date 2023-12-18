@@ -28,7 +28,7 @@
         <plugins.spotbugs.version>4.8.2.0</plugins.spotbugs.version>
 
         <plugins.checkstyle.version>3.3.1</plugins.checkstyle.version>
-        <plugins.checkstyle.puppycrawl.version>10.12.5</plugins.checkstyle.puppycrawl.version>
+        <plugins.checkstyle.puppycrawl.version>10.12.6</plugins.checkstyle.puppycrawl.version>
         <plugins.checkstyle.thomasjensen.version>7.0.1</plugins.checkstyle.thomasjensen.version>
         <plugins.jacoco.version>0.8.11</plugins.jacoco.version>
         <plugins.pmd.version>3.21.2</plugins.pmd.version>
