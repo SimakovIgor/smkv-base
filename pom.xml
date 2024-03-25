@@ -20,7 +20,7 @@
 
         <smkv-quality.version>1.0.0-SNAPSHOT</smkv-quality.version>
 
-        <plugins.compiler.version>3.12.1</plugins.compiler.version>
+        <plugins.compiler.version>3.13.0</plugins.compiler.version>
         <plugins.source.version>3.3.0</plugins.source.version>
         <plugins.enforcer.version>3.4.1</plugins.enforcer.version>
         <plugins.release.version>3.0.1</plugins.release.version>
