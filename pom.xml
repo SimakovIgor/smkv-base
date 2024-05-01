@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <java.version>20</java.version>
+        <java.version>21</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,6 +32,7 @@
         <plugins.checkstyle.thomasjensen.version>7.0.1</plugins.checkstyle.thomasjensen.version>
         <plugins.jacoco.version>0.8.11</plugins.jacoco.version>
         <plugins.pmd.version>3.21.2</plugins.pmd.version>
+        <libs.pmd.version>7.0.0</libs.pmd.version>
         <plugins.surefire.version>3.2.2</plugins.surefire.version>
         <plugins.git-commit-id.version>4.9.10</plugins.git-commit-id.version>
         <lombok.version>1.18.30</lombok.version>
@@ -373,6 +374,31 @@
                         <groupId>ru.simakov</groupId>
                         <artifactId>smkv-pmd-rules</artifactId>
                         <version>${smkv-quality.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-compat6</artifactId>
+                        <version>${libs.pmd.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-core</artifactId>
+                        <version>${libs.pmd.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-java</artifactId>
+                        <version>${libs.pmd.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-javascript</artifactId>
+                        <version>${libs.pmd.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-jsp</artifactId>
+                        <version>${libs.pmd.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
