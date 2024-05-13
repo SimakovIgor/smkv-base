@@ -31,7 +31,7 @@
         <plugins.jacoco.version>0.8.12</plugins.jacoco.version>
         <plugins.pmd.version>3.22.0</plugins.pmd.version>
         <plugins.surefire.version>3.2.5</plugins.surefire.version>
-        <libs.pmd.version>7.0.0</libs.pmd.version>
+        <libs.pmd.version>7.1.0</libs.pmd.version>
         <plugins.git-commit-id.version>4.9.10</plugins.git-commit-id.version>
         <lombok.version>1.18.32</lombok.version>
         <mapstruct-processor.version>1.5.5.Final</mapstruct-processor.version>
