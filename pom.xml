@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.simakov</groupId>
@@ -22,7 +23,6 @@
         <plugins.source.version>3.3.1</plugins.source.version>
         <plugins.enforcer.version>3.4.1</plugins.enforcer.version>
         <plugins.release.version>3.0.1</plugins.release.version>
-        <libs.spotbugs.version>4.7.3</libs.spotbugs.version>
         <plugins.spotbugs.version>4.8.4.0</plugins.spotbugs.version>
 
         <plugins.checkstyle.version>3.3.1</plugins.checkstyle.version>
@@ -30,9 +30,7 @@
         <plugins.checkstyle.thomasjensen.version>7.0.1</plugins.checkstyle.thomasjensen.version>
         <plugins.jacoco.version>0.8.12</plugins.jacoco.version>
         <plugins.pmd.version>3.22.0</plugins.pmd.version>
-        <plugins.surefire.version>3.2.5</plugins.surefire.version>
         <libs.pmd.version>7.0.0</libs.pmd.version>
-        <plugins.git-commit-id.version>4.9.10</plugins.git-commit-id.version>
         <lombok.version>1.18.32</lombok.version>
         <mapstruct-processor.version>1.5.5.Final</mapstruct-processor.version>
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
@@ -47,7 +45,6 @@
             <version>${lombok.version}</version>
         </dependency>
 
-        <!-- stuff -->
         <dependency>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs-annotations</artifactId>
@@ -61,13 +58,13 @@
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${plugins.compiler.version}</version>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${plugins.source.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>${plugins.source.version}</version>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${plugins.compiler.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -93,16 +90,6 @@
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>${plugins.jacoco.version}</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>${plugins.surefire.version}</version>
-                </plugin>
-                <plugin>
-                    <groupId>pl.project13.maven</groupId>
-                    <artifactId>git-commit-id-plugin</artifactId>
-                    <version>${plugins.git-commit-id.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -168,12 +155,12 @@
                         </goals>
                         <configuration>
                             <rules>
-                                <banDuplicatePomDependencyVersions />
+                                <banDuplicatePomDependencyVersions/>
                                 <requireMavenVersion>
                                     <version>[3.8,)</version>
                                 </requireMavenVersion>
                                 <requireJavaVersion>
-                                    <version>[17,)</version>
+                                    <version>[21,)</version>
                                 </requireJavaVersion>
                             </rules>
                         </configuration>
@@ -301,39 +288,6 @@
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>pl.project13.maven</groupId>
-                <artifactId>git-commit-id-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>revision</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>revision</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <!--https://github.com/git-commit-id/git-commit-id-maven-plugin/issues/566-->
-                    <useNativeGit>true</useNativeGit>
-                    <generateGitPropertiesFile>true</generateGitPropertiesFile>
-                    <generateGitPropertiesFilename>${project.build.outputDirectory}/META-INF/git-info.properties
-                    </generateGitPropertiesFilename>
-                    <offline>true</offline>
-                    <includeOnlyProperties>
-                        <property>git.branch</property>
-                        <property>git.commit.id.abbrev</property>
-                        <property>git.commit.time</property>
-                        <property>git.dirty</property>
-                    </includeOnlyProperties>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
@@ -406,7 +360,7 @@
         <connection>scm:git:https://github.com/SimakovIgor/smkv-base.git</connection>
         <developerConnection>scm:git:https://github.com/SimakovIgor/smkv-base.git</developerConnection>
         <url>https://github.com/SimakovIgor/smkv-base</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
 </project>
