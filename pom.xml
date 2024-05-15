@@ -23,19 +23,20 @@
         <plugins.source.version>3.3.1</plugins.source.version>
         <plugins.enforcer.version>3.4.1</plugins.enforcer.version>
         <plugins.release.version>3.0.1</plugins.release.version>
-        <plugins.spotbugs.version>4.8.4.0</plugins.spotbugs.version>
+        <plugins.spotbugs.version>4.8.5.0</plugins.spotbugs.version>
 
         <plugins.checkstyle.version>3.3.1</plugins.checkstyle.version>
         <plugins.checkstyle.puppycrawl.version>10.16.0</plugins.checkstyle.puppycrawl.version>
         <plugins.checkstyle.thomasjensen.version>7.0.1</plugins.checkstyle.thomasjensen.version>
         <plugins.jacoco.version>0.8.12</plugins.jacoco.version>
         <plugins.pmd.version>3.22.0</plugins.pmd.version>
-        <libs.pmd.version>7.0.0</libs.pmd.version>
+        <plugins.surefire.version>3.2.5</plugins.surefire.version>
+        <libs.pmd.version>7.1.0</libs.pmd.version>
         <lombok.version>1.18.32</lombok.version>
         <mapstruct-processor.version>1.5.5.Final</mapstruct-processor.version>
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
         <spring-boot-configuration-processor.version>3.2.5</spring-boot-configuration-processor.version>
-        <spotbugs-annotations.version>4.8.4</spotbugs-annotations.version>
+        <spotbugs-annotations.version>4.8.5</spotbugs-annotations.version>
     </properties>
 
     <dependencies>
