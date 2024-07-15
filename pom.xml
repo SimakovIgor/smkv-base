@@ -29,7 +29,7 @@
         <plugins.checkstyle.puppycrawl.version>10.17.0</plugins.checkstyle.puppycrawl.version>
         <plugins.checkstyle.thomasjensen.version>7.0.1</plugins.checkstyle.thomasjensen.version>
         <plugins.jacoco.version>0.8.12</plugins.jacoco.version>
-        <plugins.pmd.version>3.23.0</plugins.pmd.version>
+        <plugins.pmd.version>3.24.0</plugins.pmd.version>
         <plugins.surefire.version>3.2.5</plugins.surefire.version>
         <libs.pmd.version>7.2.0</libs.pmd.version>
         <lombok.version>1.18.32</lombok.version>
